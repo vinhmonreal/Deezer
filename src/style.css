@@ -1,0 +1,276 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  ---color1: #09090995;
+
+}
+body{
+  background-color: var(---color1);
+  width: 100%;
+  height: 100%;  
+ 
+}
+.container{
+  
+}
+#horizontal-stack{
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+#horizontal-stack-playing{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  width: 100%;
+  border: 1px solid black;
+  position: sticky;
+  bottom: 0;
+  /* height: 80px; */
+  /* border-radius: 10px;
+  box-shadow: black 0px 0px 10px; */
+  /* background-color: --color1;
+  background-color: rgb(127, 182, 255); */
+}
+
+#navbar{
+  background-color: #333;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  
+  text-decoration: none;
+  top: 0;
+  position: sticky;
+  
+}
+#sidebar{
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: black 0px 0px 10px;
+  background-color: #333;
+  position: relative;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: relative;
+}
+#section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: scroll;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: black 0px 0px 10px;
+  background-color: #333;
+  /* height: 900px; */
+  height: 100vh;
+  position: static;
+  padding: 10px;
+}
+#bottombar{
+  background-color: #333;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  text-decoration: none;
+  bottom: 0;
+  position: fixed;
+}
+.bottombar-playing{
+  background-color: #0000009a;
+  width: 100vmax;
+  height: 85px;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  text-decoration: none;
+  bottom: 0;
+  position: sticky;
+}
+.track-details{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+ 
+
+}
+.track-artist{
+  font: small sans-serif;
+  color: #aa9e9e;
+}
+.track-details img{
+  width: 56px;
+  height: 56px;
+  margin-left: 2rem;
+  align-self: center;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.bottombar-playing audio{
+  margin-left: 3rem;
+  min-width: 400px;
+  width: 20vmax;
+  margin: auto;
+  margin-right: 40%;
+}
+.navbar{
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  align-items: center; 
+  justify-content: center;
+  text-decoration: none;
+  top: 0;
+  position: fixed;
+}
+
+
+
+/* ------------------ */
+#search-result-tabel{
+  display: flex;
+  flex-direction: column;
+  height: 50px;  
+}
+.search-result{
+  display: grid;
+  grid-template-columns: 40px 40px 1fr 0.7fr 40px 40px 1fr;
+  height: 50px;  
+  gap: 10px;
+  align-items: center;
+
+ 
+}
+.search-result:hover{
+  background-color: rgb(79, 73, 73);
+
+}
+.search-result-count{
+  width: 40px;
+  text-align: right;
+}
+
+.search-result-title-artist, .search-result-title, .search-result-artist{
+  min-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.search-result-album{
+  min-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.search-result-heart-hide{
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  visibility: hidden;
+}
+.search-result-heart{
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.search-result-duration{
+  width: 40px;
+  text-align: right;
+}
+
+
+#search-box{
+  background-color: #333;
+  border: 1px solid rgb(64, 5, 241);
+  border-radius: 10px;
+  height: 30px;
+  width: 300px;
+}
+#search-box:hover{
+  box-shadow: black 0px 0px 10px;
+}
+#search-box input{
+  width: 100%;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: black 0px 0px 10px;
+  background-color: #333;
+  color: white;
+  padding-left: 10px;
+  font-size: large;
+}
+.search-result-table{
+  border-collapse: collapse;
+}
+.search-result-table td{
+  height: 56px;
+  padding-left: 10px;
+}
+.search-result-table th{
+  height: 56px;
+  text-align: left;
+  padding-left: 10px;
+}
+.title{
+  font-size: medium;
+  font-weight: bold;
+}
+.artist{
+  font-size: small;
+}
+
+#album{
+  max-width:400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#title-artist{
+  width: 400px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  
+}
+
+.control-button i{
+  font-size: 13px;
+  cursor: pointer;
+
+}
+
+
+
+tr:hover{
+  background-color: rgb(79, 73, 73);
+}
