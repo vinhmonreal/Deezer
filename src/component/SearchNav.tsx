@@ -115,7 +115,7 @@ export default  function Search () {
 
 
     return (
-        <Body navigation={true} sidebar={true} bottombar={true}>
+        <Body navigation={true} sidebar={true} bottombar={true} rightsidebar={true} >
                 <input id="search" placeholder="Search" type="text" value={search} onChange={e => setSearch(e.target.value)} />
             <div id="search-container">      
 

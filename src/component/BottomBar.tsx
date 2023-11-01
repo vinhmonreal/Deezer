@@ -61,13 +61,6 @@ const BottomBar = () => {
 
     return (
         <div className="bottombar">
-            {/* <i className="fa fa-random"></i>
-            <i className="fa fa-step-backward"></i>
-            <i className="fa fa-play" onClick={() => handlePlay(currentSong, currentCover)}></i>
-            <i className="fa fa-step-forward"></i>
-            <i className="fa fa-repeat"></i>
-            <p className="song-title">{currentSong}</p>
-            <img src={currentCover} alt="" /> */}
         </div>
     )
 }
